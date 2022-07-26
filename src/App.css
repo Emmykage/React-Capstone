@@ -4,7 +4,9 @@
   background-color: rgb(179, 179, 179);
   text-align: center;
 }
-
+.category{
+  padding: 10px 20px;
+}
 
 
 @media (prefers-reduced-motion: no-preference) {

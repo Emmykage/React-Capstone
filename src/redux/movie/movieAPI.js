@@ -1,11 +1,15 @@
 const GET_MOVIES = 'movies/movies/GET_MOVIES';
+const SEARCH_MOVIE = 'movies/movies/SEARCH_MOVIES';
 const url = 'https://api.tvmaze.com/shows';
+const searchQuery = 'https://api.tvmaze.com/search/shows?q=';
 
 const initialState = [];
 
 const MovieReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_MOVIES:
+      return action.payload;
+    case SEARCH_MOVIE:
       return action.payload;
 
     default:
@@ -33,5 +37,13 @@ export const getMovieData = () => async (dispatch) => {
     payload: data,
   });
 };
-
+export const searchedData = (query) => async (dispatch) => {
+  const response = await fetch(searchQuery + query);
+  const data = await response.json();
+  console.log(data);
+  dispatch({
+    type: SEARCH_MOVIE,
+    payload: data,
+  });
+};
 export default MovieReducer;
