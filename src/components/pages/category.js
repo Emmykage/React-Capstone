@@ -6,7 +6,7 @@ const Category = () => {
   const movies = useSelector((state) => state.categories);
 
   return (
-    <div className="cat-contain">
+    <div className="cat-contain row">
       {movies.map((movie) => (
         <MovieDisplay
           key={movie.id}

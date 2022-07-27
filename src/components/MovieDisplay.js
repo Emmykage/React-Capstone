@@ -40,7 +40,7 @@ const MovieDisplay = (props) => {
 
       </div>
       <button type="button" onClick={displayHandle}>
-        <Link to="detailspage">click</Link>
+        <Link to="/category/detailspage">  Play </Link>
         {' '}
       </button>
 

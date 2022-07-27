@@ -5,7 +5,7 @@ const Details = () => {
   const movie = useSelector((state) => state.details);
   const { name, description, image } = movie;
   return (
-    <div>
+    <div className="dispay-movie">
       <div>
         {name}
         {description}

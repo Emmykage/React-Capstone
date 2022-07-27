@@ -32,10 +32,12 @@ const Home = () => {
           <div className="col">
             <Link to="category" className="action category" onClick={() => { dispatch(getCategory(action)); }}>
 
-              Action(
-              {action.length}
-              )
-              {' '}
+              <span>
+                {' '}
+                Action(
+                {action.length}
+                )
+              </span>
 
             </Link>
           </div>

@@ -68,7 +68,7 @@ button{
     
 
 }
-.home-contain{
+.home-contain, .cat-contain{
     padding-top: 28px;
     margin: auto;
     width: 80%;
@@ -83,6 +83,7 @@ button{
    justify-content: center;
    font-size: 39px;
    font-weight: 600;
+   text-decoration: none;
 }
 .categories{
     padding-top: 10px;
@@ -99,6 +100,12 @@ button{
     display: flex;
     /* margin-bottom: 20px; */
     align-items: center;
+}
+.col span{
+    border: 1px solid grey;
+    font-size: 38px;
+    text-decoration: none;
+    padding: 16px;
 }
 /* .categories ul{
     list-style: none;
