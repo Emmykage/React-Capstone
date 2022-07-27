@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux/es/exports';
+import { Link } from 'react-router-dom';
 import { searchedData } from '../redux/movie/search';
 import logo from './image/LOGO.png';
 
@@ -25,6 +26,11 @@ const Header = () => {
 
     dispatch(searchedData(search));
   };
+  const getsearch = (e) => {
+    const id = e.target.id
+
+    dispatch(loneDAta(id));
+  };
   return (
 
     <header>
@@ -47,7 +53,17 @@ const Header = () => {
 
           <ul>
             {movies.map((movie) => (
-              <li key={movie.show.id}>{movie.show.name}</li>
+              <li key={movie.show.id}>
+                <Link
+                  to="category/detailspage"
+                  onClick={getsearch}
+                  id={movie.show.id}
+                >
+                  {movie.show.name}
+                </Link>
+                {' '}
+
+              </li>
             ))}
           </ul>
         </div>
