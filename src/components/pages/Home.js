@@ -20,9 +20,9 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="container">
+    <main className="page-container row">
 
-      <div className="row">
+      <div className=" home-contain row">
         {movies.map((movie) => (
           <MovieDisplay
             key={movie.id}
@@ -36,14 +36,46 @@ const Home = () => {
 
       </div>
       <div className="categories">
-        <h2>Categories</h2>
+        <ul>
+          <h2>Categories</h2>
+          <li>
+            <Link to="category" className="action category" onClick={() => { dispatch(getCategory(action)); }}>
+              <>
+                Action(
+                {action.length}
+                )
+                {' '}
+              </>
+            </Link>
+          </li>
+          <li>
+            <Link to="category" className="drama category" onClick={() => { dispatch(getCategory(drama)); }}>
+              <>
+                Drama(
+                {drama.length}
+                )
+              </>
+            </Link>
+          </li>
+          <li>
+            <Link to="category" className="thriller category" onClick={() => { dispatch(getCategory(thriller)); }}>
+              Thriller(
+              {thriller.length}
+              )
+            </Link>
+          </li>
+          <li>
+            <Link to="category" className="horror category" onClick={() => { dispatch(getCategory(horror)); }}>
+              Horror (
+              {horror.length}
+              )
+            </Link>
+          </li>
+
+        </ul>
 
         {/* {action.map} */}
 
-        <Link to="category" className="action category" onClick={() => { dispatch(getCategory(action)); }}><>action</></Link>
-        <Link to="category" className="drama category" onClick={() => { dispatch(getCategory(drama)); }}><>drama</></Link>
-        <Link to="category" className="thriller category" onClick={() => { dispatch(getCategory(thriller)); }}>thriller</Link>
-        <Link to="category" className="horror category" onClick={() => { dispatch(getCategory(horror)); }}>Horror</Link>
       </div>
     </main>
   );

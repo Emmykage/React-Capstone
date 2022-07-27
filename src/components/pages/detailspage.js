@@ -5,7 +5,7 @@ const Details = () => {
   const movie = useSelector((state) => state.details);
   const { name, description, image } = movie;
   return (
-    <div className="mini-container">
+    <div>
       <div>
         {name}
         {description}
