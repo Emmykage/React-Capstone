@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux/es/exports';
 import { Link } from 'react-router-dom';
 import { searchedData } from '../redux/movie/search';
+import { loneDAta } from '../redux/movie/details';
 import logo from './image/LOGO.png';
 
 const Header = () => {
@@ -27,7 +28,7 @@ const Header = () => {
     dispatch(searchedData(search));
   };
   const getsearch = (e) => {
-    const id = e.target.id
+    const { id } = e.target;
 
     dispatch(loneDAta(id));
   };

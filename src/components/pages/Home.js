@@ -93,23 +93,9 @@ const Home = () => {
             </Link>
           </div>
 
-          {/* {action.map} */}
+          </div>
 
-        </div>
-
-        {/* {movies.map((movie) => (
-
-          <MovieDisplay
-            key={movie.id}
-            name={movie.name}
-            description={movie.summary}
-            image={movie.image.medium}
-            released={movie.premiered}
-            rating={movie.rating.average}
-          />
-        )
-
-        )} */}
+        
 
       </div>
 

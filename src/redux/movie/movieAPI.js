@@ -17,11 +17,10 @@ const MovieReducer = (state = initialState, action) => {
 export const getMovieData = () => async (dispatch) => {
   const response = await fetch(url);
   const data = await response.json();
-   dispatch({
+  dispatch({
     type: GET_MOVIES,
     payload: data,
   });
 };
-
 
 export default MovieReducer;
