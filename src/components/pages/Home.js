@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { shallowEqual, useDispatch, useSelector } from 'react-redux/es/exports';
 import { getCategory } from '../../redux/movie/categories';
 import { getMovieData } from '../../redux/movie/movieAPI';
-// import MovieDisplay from '../MovieDisplay';
 
 const Home = () => {
   const movies = useSelector((state) => state.movies, shallowEqual);
@@ -14,7 +13,8 @@ const Home = () => {
   const horror = movies.filter((movie) => movie.genres[0] === 'Horror');
   const thriller = movies.filter((movie) => movie.genres[0] === 'Thriller');
   const comedy = movies.filter((movie) => movie.genres[0] === 'Comedy');
-  const adventure = movies.filter((movie) => movie.genres[0] === 'Adventure');
+  const adventure = movies.filter((movie) => movie.genres[0] === 'Crime');
+  const crime = movies.filter((movie) => movie.genres[0] === 'Comedy');
   const sciFy = movies.filter((movie) => movie.genres[0] === 'Science-Fiction' || movie.genres[1] === 'Science-Fiction' || movie.genres[2] === 'Science-Fiction');
 
   const dispatch = useDispatch();
@@ -80,6 +80,13 @@ const Home = () => {
             <Link to="category" className="science-fiction category" onClick={() => { dispatch(getCategory(sciFy)); }}>
               Science-Fiction (
               {sciFy.length}
+              )
+            </Link>
+          </div>
+          <div className="col">
+            <Link to="category" className="crime category" onClick={() => { dispatch(getCategory(crime)); }}>
+              Crime (
+              {crime.length}
               )
             </Link>
           </div>
