@@ -124,8 +124,35 @@ button{
     background-size: cover;
 
 }
+.thriller{
+    background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/maxresdefault.jpg");
+
+}
+.horror{
+    background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/horror.jpg");
+
+}
+.comedy{
+    background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/comedy.jpg");
+
+}
+.adventure{
+    background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/adventure.jpg");
+
+}
+.science-fiction{
+    background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/science-fiction-books-vs-movies.jpg");
+
+
+}
+.crime{
+    background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/crime.png");
+
+}
+
+
 .col:hover {
-    background-color: rgba(211, 79, 79, 0.3);
+    background-color: rgba(211, 79, 79, 0.9);
     box-shadow: 0px 0px 10px 0 rgb(255, 255, 255, 0.6);
 
 
