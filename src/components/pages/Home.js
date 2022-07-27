@@ -7,6 +7,8 @@ import MovieDisplay from '../MovieDisplay';
 
 const Home = () => {
   const movies = useSelector((state) => state.movies, shallowEqual);
+  // console.log(movies);
+
   const action = movies.filter((movie) => movie.genres[0] === 'Action');
   const drama = movies.filter((movie) => movie.genres[0] === 'Drama');
   const horror = movies.filter((movie) => movie.genres[0] === 'Horror');

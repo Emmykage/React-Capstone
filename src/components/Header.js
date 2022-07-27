@@ -1,25 +1,44 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux/es/exports';
-import { searchedData } from '../redux/movie/movieAPI';
+import { useDispatch, useSelector } from 'react-redux/es/exports';
+import { searchedData } from '../redux/movie/search';
 
 const Header = () => {
-  const [state, setState] = useState('');
+  const movies = useSelector((state) => state.search);
+  const [search, setSearch] = useState('');
+
   const dispatch = useDispatch();
+
   const onChange = (e) => {
-    setState(e.target.value);
+    setSearch(e.target.value);
+    clearTimeout(0);
+    if (search.trim().length === 0) {
+      return;
+    }
+
+    setTimeout(() => {
+      dispatch(searchedData(e.target.value));
+    }, 3000);
   };
-  const inputSearch = () => {
-    dispatch(searchedData(state));
-    console.log(state);
+  const inputSearch = (e) => {
+    e.preventDefault();
+
+    dispatch(searchedData(search));
   };
   return (
 
     <header>
       <form onSubmit={inputSearch}>
 
-        <input type="search" placeholder="Search here" value={state} onChange={onChange} />
-        <button type="submit">searcch</button>
+        <input type="search" placeholder="Search here" value={search} onChange={onChange} />
+        <button type="submit">search</button>
+
       </form>
+
+      <ul>
+        {movies.map((movie) => (
+          <li key={movie.show.id}>{movie.show.name}</li>
+        ))}
+      </ul>
 
     </header>
 
