@@ -11,7 +11,7 @@ const Details = () => {
     <div className="display-movie">
       <div className="mobNav">
 
-        <span><Link to="category"> back</Link></span>
+        <span><Link to="/"> back</Link></span>
         <span>category</span>
         <div>
           <span><AiFillSetting /></span>
