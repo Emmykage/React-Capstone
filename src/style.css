@@ -10,6 +10,9 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+.mobNav{
+    display: none;
+}
 .logo-bx{
     /* background-color: blueviolet; */
     display: flex;
@@ -34,10 +37,14 @@ h1{
      font-family: cursive;
    
 }
+h2{
+    font-size: 28px;
+}
 .searchBar{
-    position: relative;
+  
     /* background-color: green; */
     display: flex;
+    justify-content: end;
     flex: 1;
 }
 .searchBar ul{
@@ -47,12 +54,17 @@ h1{
     list-style: none;
     padding: 12px;
     background-color: #121212;
-    width: 50%;
+    width: 100%;
 }
 .searchBar ul li{
     padding: 6px 12px;
+    text-align: left;
+}
+.searchBar ul li:hover a{
+    color: crimson;
 }
 form{
+    position: relative;
     background-color: brown;
     min-width: 600px;
     display: flex;
@@ -61,6 +73,7 @@ form input{
     width: 100%;
     color: black;
     padding: 10px 20px;
+    position: relative;
 }
 
 
@@ -73,6 +86,18 @@ form input{
 button{
     background-color: crimson;
 }
+
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.contain{
+    width: 95%;
+    margin: auto;
+    /* background-color: blanchedalmond; */
+}
 /* ---------------home----------------  */
 .page-container{
     width: 95%;
@@ -83,7 +108,7 @@ button{
 .home-contain, .cat-contain{
     padding-top: 28px;
     margin: auto;
-    width: 80%;
+    width: 90%;
     /* background-color: antiquewhite; */
 }
 .category{
@@ -114,6 +139,10 @@ button{
    
     align-items: center;
 }
+.col:hover span{
+    background-color: rgb(244, 34, 76, 0.4);
+    transition: all 0.5s ease-out;
+}
 .action{
     background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/12720668_web1_SKYSCRAPER_Movie_01.jpg");
 }
@@ -130,11 +159,11 @@ button{
 }
 .horror{
     background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/horror.jpg");
-
+    background-size: cover;
 }
 .comedy{
     background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/comedy.jpg");
-
+    background-size: cover;
 }
 .adventure{
     background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/adventure.jpg");
@@ -147,7 +176,7 @@ button{
 }
 .crime{
     background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/crime.png");
-
+    background-size: cover;
 }
 
 
@@ -163,20 +192,12 @@ button{
     text-decoration: none;
     padding: 16px;
 }
-/* .categories ul{
-    list-style: none;
-    padding-left: 0;
 
-} */
 .categories ul li{
     width: 100%;
     padding: 12px 24px;
-    /* background-color: blue; */
     margin-right: 0;
 }
-/* .category{
-    display: block;
-} */
 
 /* ---------------detail-page-------------- */
 .movie-container{
@@ -194,4 +215,48 @@ button{
 }
 .movie-container button{
     padding: 8px 16px;
+}
+
+@media (max-width:480px ) {
+.mobNav{
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 4px;
+}
+.mobNav span:first-child{
+    font-weight: 600;
+}
+header{
+    display: none;
+}
+.logo-bx{
+    display: none
+}
+h2.left{
+    font-size: 25px;
+    background-color: #121212;
+}
+h2.right, p.left{
+    display: none;
+}
+
+.contain{
+    width: 100%;
+    padding: 0;
+}
+
+.page-container{
+    width: 100%;
+   padding: 0;
+    
+
+}
+.col{
+    height: 250px;
+}
+.col span{
+    font-size: 18px;
+}
+
 }

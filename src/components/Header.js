@@ -49,24 +49,24 @@ const Header = () => {
 
             <input type="search" placeholder="Search here" value={search} onChange={onChange} />
             <button type="submit">search</button>
+            <ul>
+              {movies.map((movie) => (
+                <li key={movie.show.id}>
+                  <Link
+                    to="category/detailspage"
+                    onClick={getsearch}
+                    id={movie.show.id}
+                  >
+                    {movie.show.name}
+                  </Link>
+                  {' '}
+
+                </li>
+              ))}
+            </ul>
 
           </form>
 
-          <ul>
-            {movies.map((movie) => (
-              <li key={movie.show.id}>
-                <Link
-                  to="category/detailspage"
-                  onClick={getsearch}
-                  id={movie.show.id}
-                >
-                  {movie.show.name}
-                </Link>
-                {' '}
-
-              </li>
-            ))}
-          </ul>
         </div>
 
       </nav>

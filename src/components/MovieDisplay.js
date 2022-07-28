@@ -13,7 +13,7 @@ const MovieDisplay = (props) => {
 
   const displayHandle = () => {
     dispatch(setDetails({
-      name, description, image,
+      name, description, image, released,
     }));
   };
 
