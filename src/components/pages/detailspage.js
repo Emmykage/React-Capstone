@@ -21,7 +21,9 @@ const Details = () => {
         </div>
 
       </div>
-      <div>
+      <div className='det-display'>
+        <p> <span><Link to="/"> back</Link></span></p>
+     
         <div className="d-image">
           <img src={image} alt="" />
         </div>
