@@ -17,7 +17,6 @@ nav {
 }
 
 .logo-bx {
-  /* background-color: blueviolet; */
   display: flex;
   flex: 1;
 }
@@ -46,7 +45,6 @@ h2 {
 }
 
 .searchBar {
-  /* background-color: green; */
   display: flex;
   justify-content: end;
   flex: 1;
@@ -89,8 +87,6 @@ form input {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  /* column-gap: 5%; */
 }
 
 button {
@@ -108,11 +104,8 @@ button {
 .contain {
   width: 95%;
   margin: auto;
-
-  /* background-color: blanchedalmond; */
 }
 
-/* ---------------home----------------  */
 .page-container {
   width: 95%;
   margin: auto;
@@ -145,8 +138,6 @@ button {
 
 .categories {
   padding-top: 10px;
-
-  /* border: 1px solid #d0cfcf; */
   width: 100%;
 }
 
@@ -245,7 +236,7 @@ button {
   padding: 8px 16px;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 492px) {
   .mobNav {
     background-color: #121212;
     display: flex;
