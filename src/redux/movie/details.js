@@ -26,9 +26,17 @@ export const setDetails = (payload) => ({
 export const loneDAta = (id) => async (dispatch) => {
   const response = await fetch(`https://api.tvmaze.com/shows/${id}`);
   const data = await response.json();
+
+  const Rdata = {
+    name: data.name,
+    description: data.summary,
+    image: data.image.medium,
+
+  };
+
   dispatch({
     type: GET_MOVIE,
-    payload: data,
+    payload: Rdata,
   });
 };
 export default detailsReducer;

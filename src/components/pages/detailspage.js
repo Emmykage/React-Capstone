@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Details = () => {
   const movie = useSelector((state) => state.details);
+  // console.log('bar: '+ movie)
   const { name, description, image } = movie;
   return (
     <div className="display-movie">
@@ -21,9 +22,12 @@ const Details = () => {
         </div>
 
       </div>
-      <div className='det-display'>
-        <p> <span><Link to="/"> back</Link></span></p>
-     
+      <div className="det-display">
+        <p>
+          {' '}
+          <span><Link to="/"> back</Link></span>
+        </p>
+
         <div className="d-image">
           <img src={image} alt="" />
         </div>

@@ -1,8 +1,7 @@
 import React from 'react';
-import Category from '../pages/category';
 import renderer from 'react-test-renderer';
+import Category from '../pages/category';
 import MovieDisplay from '../MovieDisplay';
-
 
 const Container = () => {
   <Category>

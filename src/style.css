@@ -219,6 +219,11 @@ button {
   margin-right: 0;
 }
 
+.movie-info p {
+  padding: 0 29px;
+  text-align: center;
+}
+
 /* ---------------detail-page-------------- */
 .movie-container {
   width: 300px;
