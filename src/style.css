@@ -248,8 +248,8 @@ button {
 
 
 /* -----------------------mobile view ---------------- */
+@media screen and (max-width: 480px) {
 
-@media (max-width: 480px) {
   .mobNav {
     background-color: #121212;
     display: flex;
