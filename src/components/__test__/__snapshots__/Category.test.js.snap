@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movie category renders correctly 1`] = `
+<main
+  className="page-container"
+>
+  <div
+    className="mobNav"
+  >
+    <span>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+         Home
+      </a>
+    </span>
+    <div>
+      <span>
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 1024 1024"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M512.5 390.6c-29.9 0-57.9 11.6-79.1 32.8-21.1 21.2-32.8 49.2-32.8 79.1 0 29.9 11.7 57.9 32.8 79.1 21.2 21.1 49.2 32.8 79.1 32.8 29.9 0 57.9-11.7 79.1-32.8 21.1-21.2 32.8-49.2 32.8-79.1 0-29.9-11.7-57.9-32.8-79.1a110.96 110.96 0 0 0-79.1-32.8zm412.3 235.5l-65.4-55.9c3.1-19 4.7-38.4 4.7-57.7s-1.6-38.8-4.7-57.7l65.4-55.9a32.03 32.03 0 0 0 9.3-35.2l-.9-2.6a442.5 442.5 0 0 0-79.6-137.7l-1.8-2.1a32.12 32.12 0 0 0-35.1-9.5l-81.2 28.9c-30-24.6-63.4-44-99.6-57.5l-15.7-84.9a32.05 32.05 0 0 0-25.8-25.7l-2.7-.5c-52-9.4-106.8-9.4-158.8 0l-2.7.5a32.05 32.05 0 0 0-25.8 25.7l-15.8 85.3a353.44 353.44 0 0 0-98.9 57.3l-81.8-29.1a32 32 0 0 0-35.1 9.5l-1.8 2.1a445.93 445.93 0 0 0-79.6 137.7l-.9 2.6c-4.5 12.5-.8 26.5 9.3 35.2l66.2 56.5c-3.1 18.8-4.6 38-4.6 57 0 19.2 1.5 38.4 4.6 57l-66 56.5a32.03 32.03 0 0 0-9.3 35.2l.9 2.6c18.1 50.3 44.8 96.8 79.6 137.7l1.8 2.1a32.12 32.12 0 0 0 35.1 9.5l81.8-29.1c29.8 24.5 63 43.9 98.9 57.3l15.8 85.3a32.05 32.05 0 0 0 25.8 25.7l2.7.5a448.27 448.27 0 0 0 158.8 0l2.7-.5a32.05 32.05 0 0 0 25.8-25.7l15.7-84.9c36.2-13.6 69.6-32.9 99.6-57.5l81.2 28.9a32 32 0 0 0 35.1-9.5l1.8-2.1c34.8-41.1 61.5-87.4 79.6-137.7l.9-2.6c4.3-12.4.6-26.3-9.5-35zm-412.3 52.2c-97.1 0-175.8-78.7-175.8-175.8s78.7-175.8 175.8-175.8 175.8 78.7 175.8 175.8-78.7 175.8-175.8 175.8z"
+          />
+        </svg>
+      </span>
+      <span>
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M7 7.07L8.43 8.5c.91-.91 2.18-1.48 3.57-1.48s2.66.57 3.57 1.48L17 7.07C15.72 5.79 13.95 5 12 5s-3.72.79-5 2.07zM12 1C8.98 1 6.24 2.23 4.25 4.21l1.41 1.41C7.28 4 9.53 3 12 3s4.72 1 6.34 2.62l1.41-1.41A10.963 10.963 0 0012 1zm2.86 9.01L9.14 10C8.51 10 8 10.51 8 11.14v9.71c0 .63.51 1.14 1.14 1.14h5.71c.63 0 1.14-.51 1.14-1.14v-9.71c.01-.63-.5-1.13-1.13-1.13zM15 20H9v-8h6v8z"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+  <div
+    className="mobNav"
+  />
+  <h2
+    className="right"
+  >
+    Search Results (
+    0
+    )
+  </h2>
+  <div
+    className=" home-contain"
+  >
+    <h2
+      className="left"
+    >
+      Movie by Genres
+    </h2>
+    <div
+      className="categories row"
+    >
+      <div
+        className="col"
+      >
+        <a
+          className="action category"
+          href="/category"
+          onClick={[Function]}
+        >
+          <span>
+             
+            Action(
+            0
+            )
+          </span>
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          className="drama category"
+          href="/category"
+          onClick={[Function]}
+        >
+          <span>
+            Drama(
+            0
+            )
+          </span>
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          className="thriller category"
+          href="/category"
+          onClick={[Function]}
+        >
+          <span>
+            Thriller(
+            0
+            )
+          </span>
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          className="horror category"
+          href="/category"
+          onClick={[Function]}
+        >
+          <span>
+            Horror (
+            0
+            )
+          </span>
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          className="comedy category"
+          href="/category"
+          onClick={[Function]}
+        >
+          <span>
+            Comedy (
+            0
+            )
+          </span>
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          className="adventure category"
+          href="/category"
+          onClick={[Function]}
+        >
+          <span>
+             
+            Adventure (
+            0
+            )
+          </span>
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          className="science-fiction category"
+          href="/category"
+          onClick={[Function]}
+        >
+          <span>
+            Science-Fiction (
+            0
+            )
+          </span>
+        </a>
+      </div>
+      <div
+        className="col"
+      >
+        <a
+          className="crime category"
+          href="/category"
+          onClick={[Function]}
+        >
+          <span>
+            Crime (
+            0
+            )
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+`;

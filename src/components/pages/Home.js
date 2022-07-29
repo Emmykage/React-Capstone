@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { shallowEqual, useDispatch, useSelector } from 'react-redux/es/exports';
+import { useDispatch, useSelector } from 'react-redux';
 import { AiFillSetting } from 'react-icons/ai';
 import { MdOutlineSpeakerPhone } from 'react-icons/md';
 import { getMovieData } from '../../redux/movie/movieAPI';
 import { getCategory } from '../../redux/movie/categories';
 
 const Home = () => {
-  const movies = useSelector((state) => state.movies, shallowEqual);
+  const movies = useSelector((state) => state.movies);
   // console.log(movies);
 
   const action = movies.filter((movie) => movie.genres[0] === 'Action');

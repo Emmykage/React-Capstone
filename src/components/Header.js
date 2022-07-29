@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux/es/exports';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { searchedData } from '../redux/movie/search';
 import { loneDAta } from '../redux/movie/details';
@@ -47,7 +47,7 @@ const Header = () => {
         <div className="searchBar">
           <form onSubmit={inputSearch}>
 
-            <input type="search" placeholder="Search here" value={search} onChange={onChange} />
+            <input type="search" placeholder="Search movies here" value={search} onChange={onChange} />
             <button type="submit">search</button>
             <ul>
               {movies.map((movie) => (
