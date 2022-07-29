@@ -48,7 +48,7 @@ h2 {
 .searchBar {
   /* background-color: green; */
   display: flex;
-  justify-content: flex-end;
+ justify-content: flex-end;
   flex: 1;
 }
 
@@ -245,6 +245,10 @@ button {
   padding: 8px 16px;
 }
 
+
+
+/* -----------------------mobile view ---------------- */
+
 @media (max-width: 480px) {
   .mobNav {
     background-color: #121212;
@@ -300,5 +304,7 @@ button {
 
   .col {
     height: 250px;
+   
+   
   }
 }
