@@ -78,7 +78,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Special acknowledgment to [Nelson Sakwa]{https://www.behance.net/sakwadesignstudio) whose design inspired the production of this App
+- Special acknowledgment to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) whose original [design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) inspired the production of this App
 
 
 ## 📝 License
