@@ -2,7 +2,7 @@
 
 # Metrics webapp - TV Shows
 
-> "Book Store" the Metric WebApp is an app that displays TV shows gotten from an TVMAZE API. The API request contains information about a particular Show such as movie description, ratings, duration and release date. The homepage of the App groups the movie into categories based on on Show genres. it also give a metric figure(numbers) of movies available in each category
+> "METRIC WEBAPP" the Metric WebApp is an app that displays TV shows gotten from an TVMAZE API. The API request contains information about a particular Show such as movie description, ratings, duration and release date. The homepage of the App groups the movie into categories based on on Show genres. it also give a metric figure(numbers) of movies available in each category
 
 - Display Show categoriess.
 - Gives details of shows.
