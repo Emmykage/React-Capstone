@@ -48,7 +48,7 @@ h2 {
 .searchBar {
   /* background-color: green; */
   display: flex;
- justify-content: flex-end;
+  justify-content: flex-end;
   flex: 1;
 }
 
@@ -300,7 +300,5 @@ button {
 
   .col {
     height: 250px;
-   
-   
   }
 }
