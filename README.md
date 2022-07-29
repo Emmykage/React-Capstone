@@ -78,9 +78,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Special acknowledgment to [Nelson Sakwa]{https://www.behance.net/sakwadesignstudio) whose design inspired the production of this App
+
 
 ## 📝 License
 
