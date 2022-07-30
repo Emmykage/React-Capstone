@@ -62,7 +62,7 @@ npm start
 
 - GitHub: [@emmykage](https://github.com/Emmykage)
 - Twitter: [@mennydev](https://twitter.com/mennydev)
-- LinkedIn: [Menanya Morris](https://www.linkedin.com/in/morris-menanya-a51985104/)
+- LinkedIn: [Menanya Morris](https://www.linkedin.com/in/morris-menanya)
 
 
 
