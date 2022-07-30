@@ -1,4 +1,5 @@
 const SET_DETAILS = 'movie-details/details/SET_DETAIL';
+const GET_MOVIE = 'singlemovie/lone/GET_MOVIE';
 const detailstate = {
   name: '',
   description: '',
@@ -8,6 +9,8 @@ const detailstate = {
 const detailsReducer = (state = detailstate, action) => {
   switch (action.type) {
     case SET_DETAILS:
+      return action.payload;
+    case GET_MOVIE:
       return action.payload;
 
     default:
@@ -20,4 +23,20 @@ export const setDetails = (payload) => ({
   payload,
 
 });
+export const loneDAta = (id) => async (dispatch) => {
+  const response = await fetch(`https://api.tvmaze.com/shows/${id}`);
+  const data = await response.json();
+
+  const Rdata = {
+    name: data.name,
+    description: data.summary,
+    image: data.image.medium,
+
+  };
+
+  dispatch({
+    type: GET_MOVIE,
+    payload: Rdata,
+  });
+};
 export default detailsReducer;

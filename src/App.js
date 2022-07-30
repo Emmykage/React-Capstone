@@ -1,8 +1,9 @@
 import './App.css';
+import './style.css';
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
+import Home from './components/pages/Home';
 import Header from './components/Header';
-import Details from './components/detailspage';
+import Details from './components/pages/detailspage';
 import Category from './components/pages/category';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="detailspage" element={<Details />} />
+        <Route path="category/detailspage" element={<Details />} />
         <Route path="category" element={<Category />} />
 
       </Routes>

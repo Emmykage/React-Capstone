@@ -1,0 +1,295 @@
+header {
+  width: 100%;
+  background-color: #121212;
+  padding: 20px;
+}
+
+nav {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobNav {
+  display: none;
+}
+
+.logo-bx {
+  display: flex;
+  flex: 1;
+}
+
+.logo {
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 80px;
+}
+
+h1 {
+  margin-left: 15px;
+  font-size: 37px;
+  color: rgb(250, 89, 121);
+  letter-spacing: 0.5rem;
+  font-family: cursive;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.searchBar ul {
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  list-style: none;
+  padding: 12px;
+  background-color: #121212;
+  width: 100%;
+}
+
+.searchBar ul li {
+  padding: 6px 12px;
+  text-align: left;
+}
+
+.searchBar ul li:hover a {
+  color: crimson;
+}
+
+form {
+  position: relative;
+  background-color: brown;
+  min-width: 600px;
+  display: flex;
+}
+
+form input {
+  width: 100%;
+  color: black;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+button {
+  background-color: crimson;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.contain {
+  width: 95%;
+  margin: auto;
+}
+
+.page-container {
+  width: 95%;
+  margin: auto;
+}
+
+.home-contain,
+.cat-contain {
+  padding-top: 28px;
+  margin: auto;
+  width: 90%;
+
+  /* background-color: antiquewhite; */
+}
+
+.category {
+  background-color: rgb(18, 18, 18, 0.7);
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 39px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.det-display p {
+  text-align: left;
+}
+
+.categories {
+  padding-top: 10px;
+  width: 100%;
+}
+
+.col {
+  border: 1px solid white;
+  width: 50%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.col span {
+  border: 1px solid grey;
+  font-size: 38px;
+  text-decoration: none;
+  padding: 16px;
+}
+
+.col:hover span {
+  background-color: rgb(244, 34, 76, 0.4);
+  transition: all 0.5s ease-out;
+}
+
+.action {
+  background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/12720668_web1_SKYSCRAPER_Movie_01.jpg");
+}
+
+.drama {
+  background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/a-star-is-born-everett-1651175088.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.thriller {
+  background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/maxresdefault.jpg");
+}
+
+.horror {
+  background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/horror.jpg");
+  background-size: cover;
+}
+
+.comedy {
+  background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/comedy.jpg");
+  background-size: cover;
+}
+
+.adventure {
+  background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/adventure.jpg");
+}
+
+.science-fiction {
+  background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/science-fiction-books-vs-movies.jpg");
+}
+
+.crime {
+  background: linear-gradient(rgb(39, 42, 49, 0.7), rgba(60, 60, 60, 0.7)), url("./components/image/crime.png");
+  background-size: cover;
+}
+
+.col:hover {
+  background-color: rgba(211, 79, 79, 0.9);
+  box-shadow: 0 0 10px 0 rgb(255, 255, 255, 0.6);
+}
+
+.categories ul li {
+  width: 100%;
+  padding: 12px 24px;
+  margin-right: 0;
+}
+
+.movie-info p {
+  padding: 0 29px;
+  text-align: center;
+}
+
+/* ---------------detail-page-------------- */
+.movie-container {
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 5px;
+  background-color: #121212;
+}
+
+.m-img {
+  width: 100%;
+  padding: 8px;
+}
+
+.m-img img {
+  width: 100%;
+}
+
+.movie-container button {
+  padding: 8px 16px;
+}
+
+@media screen and (max-width: 492px) {
+  .mobNav {
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 4px;
+  }
+
+  .col span {
+    font-size: 18px;
+  }
+
+  .mobNav span:first-child {
+    font-weight: 600;
+  }
+
+  header {
+    display: none;
+  }
+
+  .logo-bx {
+    display: none;
+  }
+
+  h2.left {
+    font-size: 25px;
+    background-color: #121212;
+  }
+
+  h2.right,
+  p.left {
+    display: none;
+  }
+
+  .contain {
+    width: 100%;
+    padding: 0;
+  }
+
+  .movie-container {
+    width: 100%;
+  }
+
+  .home-contain,
+  .cat-contain {
+    width: 100%;
+  }
+
+  .page-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .col {
+    height: 250px;
+  }
+}

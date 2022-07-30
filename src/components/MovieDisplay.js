@@ -6,21 +6,41 @@ import { setDetails } from '../redux/movie/details';
 
 const MovieDisplay = (props) => {
   const dispatch = useDispatch();
-  const { name, image, description } = props;
+  const {
+    name, image, description, released, rating,
+  } = props;
   //   console.log(image);
 
   const displayHandle = () => {
-    dispatch(setDetails({ name, description, image }));
+    dispatch(setDetails({
+      name, description, image, released,
+    }));
   };
 
   return (
 
-    <div>
-      {name}
+    <div className="movie-container">
+      <div className="m-img">
+        <img src={image} alt="" />
+      </div>
+      <div className="num-info">
+        <h2>
+          {' '}
+          {name}
+        </h2>
+        <p>
+          released date:
+          {released}
+        </p>
+        <p>
+          {' '}
+          rating:
+          {rating}
+        </p>
 
-      <img src={image} alt="" />
+      </div>
       <button type="button" onClick={displayHandle}>
-        <Link to="detailspage">click</Link>
+        <Link to="/category/detailspage">  Play </Link>
         {' '}
       </button>
 
@@ -31,5 +51,7 @@ MovieDisplay.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  released: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired,
 };
 export default MovieDisplay;
