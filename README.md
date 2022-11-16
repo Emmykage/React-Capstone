@@ -15,10 +15,11 @@
 - Redux
 
 ## Live Demo
+[Netlify Live Demo Link](https://whimsical-trifle-7ef5dd.netlify.app/)
 
 ## Video [Link](https://drive.google.com/file/d/1geftNJtwXUKpLTZl-mva0roMZIWgkD53/view?usp=sharing)
 
-[Netlify Live Demo Link]()
+
 
 ## Getting Started
 
